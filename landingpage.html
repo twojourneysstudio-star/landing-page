@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Journeys STUDIO | Em Breve</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Configuration for Tailwind colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#a07f55',
+                            cream: '#e8ded1',
+                            dark: '#111111',
+                            card: '#1a1a1a',
+                            border: '#33291d',
+                            accent: '#c4a275'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        philosopher: ['Philosopher', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-gray-200 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-gold selection:text-white">
+
+    <!-- HEADER / NAVIGATION (Sem links de páginas) -->
+    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border/40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- BRAND LOGO -->
+                <div class="flex items-center space-x-3">
+                    <!-- Icon PNG Image -->
+                    <div class="w-12 h-12 rounded-full overflow-hidden border border-brand-gold/40 p-0.5 bg-brand-dark flex items-center justify-center">
+                        <img src="logotipo-05.png" alt="Two Journeys Logo" class="w-full h-full object-contain rounded-full">
+                    </div>
+                    <!-- Brand Text -->
+                    <div class="flex flex-col">
+                        <span class="font-philosopher font-bold text-xl sm:text-2xl text-brand-cream tracking-wide">
+                            Two Journeys
+                        </span>
+                        <span class="text-[9px] tracking-[0.35em] text-brand-gold uppercase font-medium -mt-1">
+                            STUDIO
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Status Badge -->
+                <div class="hidden sm:block">
+                    <span class="px-3 py-1 border border-brand-gold/30 rounded-full text-[10px] uppercase tracking-widest text-brand-gold/80 bg-brand-gold/5">
+                        Site em Construção
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO / MAIN LANDING CONTENT -->
+    <main class="flex-grow relative flex items-center justify-center overflow-hidden min-h-[calc(100vh-80px)]">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105 transition-transform duration-1000"
+             style="background-image: url('DSCF2075.jpg');">
+        </div>
+        
+        <!-- Dark Gradient Overlays for optimal text contrast -->
+        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/75 to-brand-dark/50"></div>
+        
+        <!-- Hero Content -->
+        <div class="relative max-w-4xl mx-auto text-center px-4 py-16 z-10 space-y-6">
+            
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-philosopher font-bold text-brand-cream tracking-tight leading-none">
+                Two Journeys
+            </h1>
+            
+            <!-- Subtitle Sans-Serif Effect -->
+            <div class="mt-2">
+                <span class="font-sans font-light tracking-[0.4em] uppercase text-xl sm:text-3xl text-brand-gold opacity-90">
+                    ONE PATH
+                </span>
+            </div>
+            
+            <p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-300 font-light leading-relaxed pt-2">
+                Duas viagens unidas num só caminho: a viagem de um átomo e a viagem da lua. Capturamos momentos autênticos e histórias de vida através do nosso olhar.
+            </p>
+
+            <!-- EMAIL & INSTAGRAM DIRECT LINKS -->
+            <div class="pt-8 flex flex-col items-center justify-center space-y-6">
+                
+                <!-- Email Contact -->
+                <a href="mailto:geral@twojourneys.pt" class="group flex items-center space-x-3 px-6 py-3 rounded-full bg-brand-card/80 border border-brand-gold/40 hover:border-brand-gold transition-all duration-300 shadow-lg hover:-translate-y-0.5">
+                    <svg class="w-5 h-5 text-brand-gold group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <span class="text-sm sm:text-base font-medium text-brand-cream group-hover:text-brand-gold transition-colors tracking-wide">
+                        geral@twojourneys.pt
+                    </span>
+                </a>
+
+                <!-- Instagram Links -->
+                <div class="flex flex-wrap justify-center items-center gap-3 pt-2">
+                    <!-- Brand Instagram -->
+                    <a href="https://instagram.com/twojourneys.studio" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 px-4 py-2 rounded bg-brand-card/60 border border-brand-border/60 hover:border-brand-gold text-gray-300 hover:text-brand-gold transition-all duration-300 text-xs tracking-wider uppercase font-medium">
+                        <svg class="w-4 h-4 text-brand-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <span>@twojourneys.studio</span>
+                    </a>
+
+                    <!-- Pedro Instagram -->
+                    <a href="https://instagram.com/theatomsjourney" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 px-4 py-2 rounded bg-brand-card/60 border border-brand-border/60 hover:border-brand-gold text-gray-300 hover:text-brand-gold transition-all duration-300 text-xs tracking-wider uppercase font-medium">
+                        <svg class="w-4 h-4 text-brand-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <span>@theatomsjourney</span>
+                    </a>
+
+                    <!-- Joana Instagram -->
+                    <a href="https://instagram.com/themoonsjourney" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 px-4 py-2 rounded bg-brand-card/60 border border-brand-border/60 hover:border-brand-gold text-gray-300 hover:text-brand-gold transition-all duration-300 text-xs tracking-wider uppercase font-medium">
+                        <svg class="w-4 h-4 text-brand-gold" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        <span>@themoonsjourney</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark border-t border-brand-border/40 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xs text-gray-500 tracking-wider">
+                &copy; 2026 Two Journeys STUDIO. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
